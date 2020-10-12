@@ -17,15 +17,30 @@ $(document).ready(function () {
   const conversion_factor = 1000 * 60 * 60 * 24; // ms in a day
   let delta = Math.floor((christmas - today) / conversion_factor); // days until christmas
 
+  let text;
   if (delta < 1) {
-    $(".container").text("Buon Natale!");
+    text = "Buon Natale!";
+    $(".container").text(text);
     itschristmas = true;
-  } else {
-    $(".days").text(delta);
+  } else if (delta === 1) {
+    text = "Domani è Natale!";
+    $(".container").text(text);
     itschristmas = false;
   }
+  else {
+    text = `Mancano ${delta} giorni a natale!`;
+    $(".container").text(text);
+    itschristmas = false;
+  }
+  document.title = text;
 
   $(document).click(function () {
-    $(".mobile").fadeOut(1000);
+    $(".mobile").fadeOut(2500);
+  })
+
+  $(document).mousemove(function() {
+    if ($(".desktop").is(":visible")) {
+      $(".desktop").fadeOut(5000);
+    }
   })
 })
