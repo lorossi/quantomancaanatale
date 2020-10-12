@@ -3,6 +3,14 @@
   src: url(stnicholas.ttf);
 }
 
+a:active, a:visited {
+  color: inherit;
+}
+
+a:link {
+  color: white;
+}
+
 body {
   font-family: StNicholas;
   background-color: #B3000C;
