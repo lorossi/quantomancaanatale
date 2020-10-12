@@ -1,0 +1,66 @@
+@font-face {
+  font-family: StNicholas;
+  src: url(stnicholas.ttf);
+}
+
+body {
+  font-family: StNicholas;
+  background-color: #B3000C;
+  color: #D8D8D8;
+  overflow: hidden;
+}
+
+body * {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  top: 20vh;
+  width: 100vw;
+  text-align: center;
+  font-size: 5vw;
+  z-index: 10;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10vh;
+  opacity: 0.7;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.5vw;
+  z-index: 10;
+}
+
+.snowballs {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.mobile {
+  visibility: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    top: 30vh;
+    font-size: 10vw;
+  }
+
+  .footer {
+    font-size: 3vw;
+    bottom: 1.5vh;
+  }
+
+  .mobile {
+    padding-bottom: 3vw;
+    visibility: visible;
+  }
+}
