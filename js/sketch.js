@@ -29,6 +29,7 @@ class Snowball {
     this.position = createVector(x, y);
 
     let distance = random(10);
+    this.opacity = map(distance, 0, 10, 180, 220);
 
     if (width > 600) {
       this.speed = map(distance, 0, 10, .5, 2.5);
@@ -43,7 +44,7 @@ class Snowball {
     push();
     translate(this.position.x, this.position.y);
     noStroke();
-    fill("#D8D8D8C8");
+    fill(216, 216, 216, this.opacity);
     circle(0, 0, this.size);
     pop();
   }
