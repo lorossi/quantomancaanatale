@@ -1,7 +1,7 @@
 # quantomancaanatale
 Ce lo siamo chiesti tutti, quanto manca a Natale?
 
-Scoprilo qua https://lorossi.github.io/quantomancaanatale/ o qua
+Scoprilo qua https://lorossi.github.io/quantomancaanatale/
 
 ## Librerie
 L'animazione della neve che cade è stata scritta usando la libreria p5.js.
