@@ -1,4 +1,5 @@
 let itschristmas;
+let fading;
 
 $(document).ready(function () {
   // days countdown
@@ -34,13 +35,14 @@ $(document).ready(function () {
   }
   document.title = text;
 
-  $(document).click(function () {
-    $(".mobile").fadeOut(2500);
-  })
-
-  $(document).mousemove(function() {
-    if ($(".desktop").is(":visible")) {
-      $(".desktop").fadeOut(5000);
-    }
-  })
+  fading = false;
+  $(document).click(fade_instructions);
+  $(document).mousemove(fade_instructions);
 })
+
+function fade_instructions() {
+  if (fading) return;
+
+  $(".instructions").fadeOut(3000);
+  fading = true;
+}
