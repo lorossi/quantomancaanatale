@@ -6,7 +6,7 @@ Scoprilo qua https://lorossi.github.io/quantomancaanatale/
 ## Librerie
 L'animazione della neve che cade è stata scritta usando la libreria p5.js.
 
-La libreria jQuery è stata usata per gestire il conto alla rovescia
+La libreria jQuery è stata usata per gestire il conto alla rovescia e le interazioni con il browser.
 
 ## Funzionalità
 - Scalabile (non che ci sia molto da scalare)
